@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.movie-card {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-card_poster {
+  width: 183px;
+  object-fit: cover;
+}
+
+.movie-card_information {
+  padding: 12px 20px;
+}
+
+.movie-card_title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  max-width: 200px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.movie-card_rating {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 9px;
+  border: 2px solid #e9d100;
+  border-radius: 50%;
+}
+
+.movie-card_rating > p {
+  margin: auto;
+}
+
+.movie-card_date {
+  color: #827e7e;
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.movie-card_categories-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
+
+.movie-card_category {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fafafa;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  line-height: 14.52px;
+  height: 20px;
+  min-width: 46px;
+  padding: 2px 4px 3px 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.movie-card_overview {
+  margin: 0px;
+  line-height: 22px;
+}
+
+.ant-rate {
+  position: absolute;
+  bottom: 10px;
+}
+
+.ant-rate > .ant-rate-star {
+  margin-right: 2px;
+}
